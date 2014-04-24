@@ -16,7 +16,7 @@ also see https://github.com/constantin3000/PiCollider for using with supercollid
 adc2FUDI.py  :::  python script<br>
 adc2FUDI.c   :::  same thing, in c<br>
 
-both scripts/programs send "FUDI" messages to pd, so expect a TCP port to be open [ = suitable pd patch running].
+both scripts/programs send "FUDI" messages to pd, thus expect a TCP port to be open [ = suitable pd patch running].
 <br>
 <br>
 the messages are prefixed with an id 0-10, where<br>
