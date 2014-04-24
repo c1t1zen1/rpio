@@ -16,8 +16,6 @@ also see https://github.com/constantin3000/PiCollider for using with supercollid
 adc2FUDI.py  python script<br>
 adc2FUDI.c   the same, in c<br>
 
-usage:<br>
-
 both scripts/programs send "FUDI" messages to pd, so expect a TCP port to be open [ = suitable pd patch running].
 <br>
 <br>
@@ -41,9 +39,9 @@ so ... eg:<br>
 | | | | | | | | | | <br>
 [etc]<br>
 
-=======================================
+=======================================================================
 
-useage:
+usage:
 
 python:
 
