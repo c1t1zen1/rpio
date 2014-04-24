@@ -3,9 +3,9 @@ rpio
 
 raspberry pi / eurorack stereo DAC breakout board
 
-ADC and FUDI message handling for interfacing with puredata.
+ADC and FUDI message handling (betabeta) for interfacing with puredata.
 
-cf muffwiggler.com for more details:
+cf. muffwiggler.com for more details:
 
 http://www.muffwiggler.com/forum/viewtopic.php?t=104896&postdays=0&postorder=asc&start=0
 
@@ -21,7 +21,7 @@ usage:<br>
 both scripts/programs send "FUDI" messages to pd, so expect a TCP port to be open [ = suitable pd patch running].
 <br>
 <br>
-the messages are prefixed with an id 0-10, where
+the messages are prefixed with an id 0-10, where<br>
 0  ADC1<br>
 1  ADC2<br>
 ...<br>
@@ -58,7 +58,7 @@ gcc adc2FUDI.c -lwiringPi -std=c99 -Wall -o adc2FUDI<br>
 
 run it: <br>
 
-adc2FUDI *IP address* *port number* *update rate in ms* 
+adc2FUDI  *IP-address*  *port-number*  *update-rate-in-ms* 
 
 eg:
 
