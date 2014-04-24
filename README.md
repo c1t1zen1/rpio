@@ -13,44 +13,44 @@ also see https://github.com/constantin3000/PiCollider for using with supercollid
 
 ================================================================
 
-adc2FUDI.py  python script<br>
-adc2FUDI.c   the same, in c<br>
+adc2FUDI.py  :::  python script<br>
+adc2FUDI.c   :::  same thing, in c<br>
 
 both scripts/programs send "FUDI" messages to pd, so expect a TCP port to be open [ = suitable pd patch running].
 <br>
 <br>
 the messages are prefixed with an id 0-10, where<br>
-0  ADC1<br>
-1  ADC2<br>
+0  ADC1 [12bit]<br>
+1  ADC2 [12bit]<br>
 ...<br>
-5  ADC6<br>
-6  ClkIn 1<br>
-7  ClkIn 2<br>
-8  ClkIn 3<br>
-9  button 1<br>
-10 button 2<br>
+5  ADC6 [12bit]<br>
+6  ClkIn 1  [1bit] <br>
+7  ClkIn 2  [1bit]<br>
+8  ClkIn 3  [1bit]<br>
+9  button 1 [1bit]<br>
+10 button 2 [1bit]<br>
 
 
-so ... eg:<br>
+so ... in pd you'd do, for example:<br>
 
 [netreceive 54321]<br>
 |<br>
 [route 0 1 2 3 4 5 6 7 8 9 10]<br>
 | | | | | | | | | | <br>
-[etc]<br>
+[...]<br>
 
 =======================================================================
 
-usage:
+usage ----
 
-python:
+python (requires spidev):
 
 python ADC2pd.py
 
 
 C:
 
-compile it (wiringPi needs to be installed): <br>
+compile it (requires wiringPi): <br>
 
 gcc adc2FUDI.c -lwiringPi -std=c99 -Wall -o adc2FUDI<br> 
 
