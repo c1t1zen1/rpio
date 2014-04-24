@@ -45,7 +45,7 @@ usage ----
 
 python (requires spidev):
 
-python ADC2pd.py
+python ADC2pd.py &
 
 
 C:
