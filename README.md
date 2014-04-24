@@ -13,32 +13,33 @@ also see https://github.com/constantin3000/PiCollider for using with supercollid
 
 
 
-adc2FUDI.py  python script
-adc2FUDI.c   the same, in c
+adc2FUDI.py  python script<br>
+adc2FUDI.c   the same, in c<br>
 
-usage:
+usage:<br>
 
 both scripts/programs send "FUDI" messages to pd, so expect a TCP port to be open [ = suitable pd patch running].
-
+<br>
+<br>
 the messages are prefixed with an id 0-10, where
-0  ADC1
-1  ADC2
-...
-5  ADC6
-6  ClkIn 1
-7  ClkIn 2
-8  ClkIn 3
-9  button 1
-10 button 2
+0  ADC1<br>
+1  ADC2<br>
+...<br>
+5  ADC6<br>
+6  ClkIn 1<br>
+7  ClkIn 2<br>
+8  ClkIn 3<br>
+9  button 1<br>
+10 button 2<br>
 
 
-so ... eg:
+so ... eg:<br>
 
-[netreceive 54321]
-|
-[route 0 1 2 3 4 5 6 7 8 9 10]
-| | | | | | | | | | 
-[etc]
+[netreceive 54321]<br>
+|<br>
+[route 0 1 2 3 4 5 6 7 8 9 10]<br>
+| | | | | | | | | | <br>
+[etc]<br>
 
 =======================================
 
@@ -51,13 +52,13 @@ python ADC2pd.py
 
 C:
 
-compile it (wiringPi needs to be installed): 
+compile it (wiringPi needs to be installed): <br>
 
-gcc adc2FUDI.c -lwiringPi -std=c99 -Wall -o adc2FUDI 
+gcc adc2FUDI.c -lwiringPi -std=c99 -Wall -o adc2FUDI<br> 
 
-run it: 
+run it: <br>
 
-adc2FUDI <IP address> <port number> <update rate in ms> 
+adc2FUDI *IP address* *port number* *update rate in ms* 
 
 eg:
 
