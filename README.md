@@ -3,15 +3,15 @@ rpio
 
 raspberry pi / eurorack stereo DAC breakout board
 
-ADC and FUDI message handling (betabeta) for interfacing with puredata.
+ADC and FUDI message handling (betabeta) for interfacing with puredata: http://en.wikipedia.org/wiki/FUDI
 
 cf. muffwiggler.com for more details:
 
 http://www.muffwiggler.com/forum/viewtopic.php?t=104896&postdays=0&postorder=asc&start=0
 
-also see https://github.com/constantin3000/PiCollider for using with supercollider
+also see https://github.com/constantin3000/PiCollider for using with supercollider (also re using OSC)
 
-
+================================================================
 
 adc2FUDI.py  python script<br>
 adc2FUDI.c   the same, in c<br>
