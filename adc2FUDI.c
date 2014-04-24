@@ -183,9 +183,8 @@ int main(int argc, char *argv[]){
 			//val = RESOLUTION - readADC_10bit(i+2);
 
 			for (int j = 0; j < _repeatADC; j++) {
-
 				val += readADC_10bit(i+2);
-		       	}
+		       		}
 			val = RESOLUTION - (val>>SMOOTH);
 			
 			if (val < 10)         { msgLength = 5; }
