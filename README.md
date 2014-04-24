@@ -20,15 +20,15 @@ both scripts/programs send "FUDI" messages to pd, thus expect a TCP port to be o
 <br>
 <br>
 the messages are prefixed with an id 0-10, where<br>
-0  ADC1 [12bit]<br>
-1  ADC2 [12bit]<br>
+0  ADC1       [12bit]<br>
+1  ADC2       [12bit]<br>
 ...<br>
-5  ADC6 [12bit]<br>
-6  ClkIn 1  [1bit] <br>
-7  ClkIn 2  [1bit]<br>
-8  ClkIn 3  [1bit]<br>
-9  button 1 [1bit]<br>
-10 button 2 [1bit]<br>
+5  ADC6       [12bit]<br>
+6  ClkIn 1    [1bit] <br>
+7  ClkIn 2    [1bit]<br>
+8  ClkIn 3    [1bit]<br>
+9  button 1   [1bit]<br>
+10 button 2   [1bit]<br>
 
 
 so ... in pd you'd do, for example:<br>
