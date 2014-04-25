@@ -17,10 +17,10 @@ ADP150 regulator (3v3, TSOT) 1x (mouser # 584-ADP150AUJZ-3.3R7)
 220R 		5x 
 470R 		2x 
 1k 		9x 
-10k 		7x 
-20k 		1x 
+10k 		9x 
+20k 		3x 
 33k 		12x 
-49k9 		8x 
+49k9 		6x 
 100k 		11x 
 
 - caps 1206:
@@ -66,5 +66,5 @@ little jumper thingies  2x (or use wire)
 /* the SM5817 diodes go to the pads right at the power header (no label -- be sure to get the orientation right) */
 /* alternatively, use ferrit beads.  										 */
 /* "fb" and "grrr" determine the gain of the (non-inverting) output stage. adjust to your liking	   	 */
-/* using 100k for "fb" and 49k9 for "grrr" will result in ~ 3x gain					   	 */
+/* using 20k for "fb" and 10k for "grrr" will result in ~ 3x gain					   	 */
 
