@@ -52,10 +52,14 @@ through-hole parts:
 - misc:
 
 jacks 		11x  kobiconn type (ie the ones with ground lug at the top, signal and switch facing down))
-
 pots		6x   (9mm vertical; linear (i’ve used 50k but anything 10-100k will do))
+tact switches  	2x  (multimecs 5E/5G)* (mouser #: 642-5GTH935)
++ caps		2x  (multimecs “1SS09-15.0”) (mouser #: 642-1SS09-15.0, or 16.0)
+spacer/standoff (M3)	1x (20mm)
+little jumper thingies  2x (or use wire)
 
-pins headers (2.54RM)    
+
+pins headers (2.54RM):    
 
 1x 	male header 2x4  (for i2s / rpi P5)
 1x	LONG female 2x4 headers (to match)
@@ -66,11 +70,8 @@ pins headers (2.54RM)
 1x	single row, male 2 pins (J1)
 1x	single row, male 3 pins (J2)
 	
-tact switches  	2x  (multimecs 5E/5G)* (mouser #: 642-5GTH935)
-+ caps		2x  (multimecs “1SS09-15.0”) (mouser #: 642-1SS09-15.0, or 16.0)
 
-spacer/standoff (M3)	1x (20mm)
-little jumper thingies  2x (or use wire)
+
 
 /* all values are printed on the pcb except the two SM5817 diodes, and resistors "fb" (2x) and "grrr" (2x)       */
 /* the SM5817 diodes go to the pads right at the power header (no label -- be sure to get the orientation right) */
