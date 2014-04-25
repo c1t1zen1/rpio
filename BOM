@@ -1,12 +1,11 @@
 /* BOM for standard 5v build / pbc rev 2 (w/ "1965/95" print on pcb) */
 
 
-
 - ICs/semis/etc (SMT):
 
-PCM5102A 1x  (mouser # 595-PCM5102APWR)
+PCM5102A (TSSOP) 1x  (mouser # 595-PCM5102APWR)
 MCP3208 (SOIC16) 1x  (mouser # 579-MCP3208CISL)
-TL072 (SOIC8) 4x (or 3x, if you’d like to use something better for the output stage, i’ve used an OPA1662)
+TL072 (SOIC8)    4x (or 3x, if you’d like to use something better for the output stage, i’ve used an OPA1662)
 2N3904 NPN (MMBT3904) 3x 
 Schottky diodes/bat42 (minimelf) 15x 
 ADP150 regulator (3v3, TSOT) 1x (mouser # 584-ADP150AUJZ-3.3R7)
@@ -17,44 +16,48 @@ ADP150 regulator (3v3, TSOT) 1x (mouser # 584-ADP150AUJZ-3.3R7)
 470R 2x 
 1k 9x 
 10k 7x 
-20k 4x 
-33k 6x 
-49k9 14x 
+20k 1x 
+33k 12x 
+49k9 8x 
 100k 11x 
 
 - caps 1206:
 
-10pf 2x (optional) 
-100n 	12x 
+10pf     2x (optional) 
+100n 	14x 
 2n2	 2x 
-1u 2x 
-2u2 2x  
+1u 	 2x 
+2u2 	 2x  
 
 through hole parts: 
 
 
-1N5817 Schottky 2x
+1N5817 Schottky diode    2x (or use 1206 bead)
 10uH inductance 	 1x
-330n (ceramic, 5RM) 2x
+330n (ceramic, 5RM) 	 2x
 10uF (electrolytic)      3x      
-22uf (electrolytic)		2x
-+3v3 regulator LD1117v33	1x (TO 220)
--5v regulator  79L05 	1x    (TO 92)
-+5v regulator 7805 or RECOM 785.0 1.0	1x (T0 220; 78L05 is ok if used with usb power)
+22uf (electrolytic)	 2x
++3v3 regulator LD1117v33 1x (TO 220)
+-5v regulator  79L05     1x    (TO 92)
++5v regulator 7805 or RECOM 785.0 1.0	1x (T0 220; 78L05 is ok if used only with usb power)
 
 - misc:
 
+jacks: 			11x  (kobiconn type (ie the ones with ground lug at the top, signal and switch facing down))
 
-jacks: 			11x  (kobiconn type (ie the ones with ground lug at the top, 				signal and switch facing down))
-
-pots:				6x   (9mm vertical; linear (i’ve used 50k but anything 10-100k will 				do))
+pots:			6x   (9mm vertical; linear (i’ve used 50k but anything 10-100k will 				do))
 
 pins headers:        		1x 	male header 2x4  (for i2s / rpi P5)
 				1x	LONG female 2x4 headers (to match)
 				1x	LONG female headers to match rpi GPIO (2x13); 
-					(if you can find them, i use 4 x 6 pin single row, 						skipping the GPIO pins in the middle (13,14), which 					aren’t used.): eg http://www.taydaelectronics.com/stackable-header-6-pins-2-54mm.html
+					(if you can find them, i use 4 x 6 pin single row, skipping the GPIO pins in the middle (13,14), which 					aren’t used.): eg http://www.taydaelectronics.com/stackable-header-6-pins-2-54mm.html
 	
 tact switches  		2x  (multimecs 5E/5G)* (mouser #: 642-5GTH935)
-caps				2x  (multimecs “1SS09-15.0”) (mouser #: 642-1SS09-15.0)
+caps			2x  (multimecs “1SS09-15.0”) (mouser #: 642-1SS09-15.0)
 
 spacer/standoff (M3)	1x (20mm)
+little jumper thingies  2x (or use wire)
+
+/* all values are printed on the pcb except the two 1N5817 diodes, and resistors "fb" (2x) and "grrr" (2x) */
+/* the 1N5817 diodes go to pads right at the power header (no label); "fb" and "grrr" determine the gain of the (non-inverting) output stage */
+
