@@ -7,8 +7,8 @@ PCM5102A (TSSOP) 1x  (mouser # 595-PCM5102APWR)
 MCP3208 (SOIC16) 1x  (mouser # 579-MCP3208CISL)
 TL072 (SOIC8)    4x (or 3x, if you’d like to use something better for the output stage, i’ve used an OPA1662)
 2N3904 NPN (MMBT3904) 3x 
-Schottky diodes/bat42 (minimelf) 15x 
-Schottky diode/SM5817 2x (or use 1206 ferrit bead, rated 1A (probably 0.5A will do, too))
+Bat42 Schottky diodes (minimelf) 15x 
+SM5817 Schottky diodes 2x (or use 1206 ferrit bead, rated 1A (probably 0.5A will do, too))
 ADP150 regulator (3v3, TSOT) 1x (mouser # 584-ADP150AUJZ-3.3R7)
 
 
@@ -62,8 +62,9 @@ tact switches  	2x  (multimecs 5E/5G)* (mouser #: 642-5GTH935)
 spacer/standoff (M3)	1x (20mm)
 little jumper thingies  2x (or use wire)
 
-/* all values are printed on the pcb except the two 1N5817 diodes, and resistors "fb" (2x) and "grrr" (2x) */
-/* the 1N5817 diodes go to the pads right at the power header (no label); alternatively, use ferrit beads  */
-/* "fb" and "grrr" determine the gain of the (non-inverting) output stage. adjust to your liking	   */
-/* using 100k for "fb" and 49k9 for "grrr" will result in ~ 3x gain					   */
+/* all values are printed on the pcb except the two SM5817 diodes, and resistors "fb" (2x) and "grrr" (2x)       */
+/* the SM5817 diodes go to the pads right at the power header (no label -- be sure to get the orientation right) */
+/* alternatively, use ferrit beads.  										 */
+/* "fb" and "grrr" determine the gain of the (non-inverting) output stage. adjust to your liking	   	 */
+/* using 100k for "fb" and 49k9 for "grrr" will result in ~ 3x gain					   	 */
 
