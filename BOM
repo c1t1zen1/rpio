@@ -63,5 +63,6 @@ little jumper thingies  2x (or use wire)
 
 /* all values are printed on the pcb except the two 1N5817 diodes, and resistors "fb" (2x) and "grrr" (2x) */
 /* the 1N5817 diodes go to pads right at the power header (no label);        				   */
-/* "fb" and "grrr" determine the gain of the (non-inverting) output stage				   */
+/* "fb" and "grrr" determine the gain of the (non-inverting) output stage. adjust to your liking	   */
+/* using 100k for "fb" and 49k9 for "grrr" will result in ~ 3x gain					   */
 
