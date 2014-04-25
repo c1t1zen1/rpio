@@ -1,60 +1,62 @@
 /* BOM for standard 5v build / pbc rev 2 (w/ "1965/95" print on pcb) */
 
-- ICs/semis/etc (SMT): <br>
 
-PCM5102A 1  (mouser # 595-PCM5102APWR)<br>
 
-MCP3208 (SOIC16) 1  (mouser # 579-MCP3208CISL)<br>
+- ICs/semis/etc (SMT):
 
-TL072 (SOIC8) 4 (or 3, if you’d like to use something better for the output stage, i’ve used an OPA1662)<br>
-2N3904 NPN (MMBT3904) 3 <br>
-Schottky diodes/bat42 (minimelf) 15 <br>
-ADP150 regulator (3v3, TSOT) 1 (mouser # 584-ADP150AUJZ-3.3R7)<br>
+PCM5102A 1x  (mouser # 595-PCM5102APWR)
 
-- resistors 1206<br>
+MCP3208 (SOIC16) 1x  (mouser # 579-MCP3208CISL)
 
-220R 5 <br>
-470R 2 <br>
-1k 9 <br>
-10k 7 <br>
-20k 1 <br>
-33k 6 <br>
-49k9 14 <br>
-100k 11 <br>
+TL072 (SOIC8) 4x (or 3x, if you’d like to use something better for the output stage, i’ve used an OPA1662)
+2N3904 NPN (MMBT3904) 3x 
+Schottky diodes/bat42 (minimelf) 15x 
+ADP150 regulator (3v3, TSOT) 1x (mouser # 584-ADP150AUJZ-3.3R7)
+
+- resistors 1206
+
+220R 5x 
+470R 2x 
+1k 9x 
+10k 7x 
+20k 4x 
+33k 6x 
+49k9 14x 
+100k 11x 
 
 - caps 1206:
 
-10pf 2 (optional) <br>
-100n 	12 <br>
-2n2	 2 <br>
-1u 2 <br>
-2u2 2  <br>
+10pf 2x (optional) 
+100n 	12x 
+2n2	 2x 
+1u 2x 
+2u2 2x  
 
-through hole parts: <br>
-
-
-1N5817 Schottky diodes 2 <br>
-10uH inductance 	 1 <br>
-330n (ceramic, 5RM) 2<br>
-10uF (electrolytic)      3   <br>   
-22uf (electrolytic)		2<br>
-+3v3 regulator LD1117v33	1 (TO 220)<br>
--5v regulator  79L05 	1    (TO 92)<br>
-+5v regulator 7805 	1 (T0 220; 78L05 is ok if used with usb power)<br>
-
-- misc:<br>
+through hole parts: 
 
 
-jacks: 			11  (kobiconn type (ie the ones with ground lug at the top, signal and switch facing down))<br>
+1N5817 Schottky 2x
+10uH inductance 	 1x
+330n (ceramic, 5RM) 2x
+10uF (electrolytic)      3x      
+22uf (electrolytic)		2x
++3v3 regulator LD1117v33	1x (TO 220)
+-5v regulator  79L05 	1x    (TO 92)
++5v regulator 7805 or RECOM 785.0 1.0	1x (T0 220; 78L05 is ok if used with usb power)
 
-pots:				6   (vertical; linear (i’ve used 50k but anything 10-100k will do))<br>
+- misc:
 
-pins headers:        		1 	male header 2x4  (for i2s / rpi P5)<br>
-				1	LONG female 2x4 headers (to match)<br>
-				1	LONG female headers to match rpi GPIO (2x13); <br>
-					(if you can find them, i use 4 x 6 pin single row, skipping the GPIO pins in the middle (13,14), which aren’t used.): eg http://www.taydaelectronics.com/stackable-header-6-pins-2-54mm.html<br>
+
+jacks: 			11x  (kobiconn type (ie the ones with ground lug at the top, 				signal and switch facing down))
+
+pots:				6x   (9mm vertical; linear (i’ve used 50k but anything 10-100k will 				do))
+
+pins headers:        		1x 	male header 2x4  (for i2s / rpi P5)
+				1x	LONG female 2x4 headers (to match)
+				1x	LONG female headers to match rpi GPIO (2x13); 
+					(if you can find them, i use 4 x 6 pin single row, 						skipping the GPIO pins in the middle (13,14), which 					aren’t used.): eg http://www.taydaelectronics.com/stackable-header-6-pins-2-54mm.html
 	
-tact switches  		2  (multimecs 5E/5G)* (mouser #: 642-5GTH935)<br>
-caps				2  (multimecs “1SS09-15.0”) (mouser #: 642-1SS09-15.0)<br>
+tact switches  		2x  (multimecs 5E/5G)* (mouser #: 642-5GTH935)
+caps				2x  (multimecs “1SS09-15.0”) (mouser #: 642-1SS09-15.0)
 
-spacer/standoff (M3)	1 (20mm)<br>
+spacer/standoff (M3)	1x (20mm)
