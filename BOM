@@ -12,22 +12,22 @@ ADP150 regulator (3v3, TSOT) 1x (mouser # 584-ADP150AUJZ-3.3R7)
 
 - resistors 1206:
 
-220R 5x 
-470R 2x 
-1k 9x 
-10k 7x 
-20k 1x 
-33k 12x 
-49k9 8x 
-100k 11x 
+220R 		5x 
+470R 		2x 
+1k 		9x 
+10k 		7x 
+20k 		1x 
+33k 		12x 
+49k9 		8x 
+100k 		11x 
 
 - caps 1206:
 
-10pf     2x (optional) 
-100n 	14x 
-2n2	 2x 
-1u 	 2x 
-2u2 	 2x  
+10pf    	 2x (optional) 
+100n 		14x 
+2n2		 2x 
+1u 		 2x 
+2u2 		 2x  
 
 through hole parts: 
 
@@ -46,7 +46,7 @@ jacks 		11x  kobiconn type (ie the ones with ground lug at the top, signal and s
 
 pots		6x   (9mm vertical; linear (i’ve used 50k but anything 10-100k will do))
 
-pins headers    
+pins headers (2.54RM)    
 
 1x 	male header 2x4  (for i2s / rpi P5)
 1x	LONG female 2x4 headers (to match)
