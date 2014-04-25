@@ -5,7 +5,7 @@
 
 PCM5102A (TSSOP) 1x  (mouser # 595-PCM5102APWR)
 MCP3208 (SOIC16) 1x  (mouser # 579-MCP3208CISL)
-TL072 (SOIC8)    4x (or 3x, if you’d like to use something better for the output stage, i’ve used an OPA1662)
+TL072 (SOIC8)    4x  (or 3x, if you’d like to use something better for the output stage, i’ve used an OPA1662)
 NPN transistors (MMBT3904) 3x 
 BAT42 Schottky diodes (minimelf) 15x 
 SM5817 Schottky diodes 2x (or use 1206 ferrit bead, rated 1A)
