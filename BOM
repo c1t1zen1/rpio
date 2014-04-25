@@ -16,12 +16,12 @@ ADP150 regulator (3v3, TSOT) 1x (mouser # 584-ADP150AUJZ-3.3R7)
 
 220R 		5x 
 470R 		2x 
-1k 		9x 
+1k 		8x 
 10k 		9x 
 20k 		3x 
 33k 		12x 
 49k9 		6x 
-100k 		11x 
+100k 		9x 
 
 - caps 1206:
 
@@ -55,6 +55,8 @@ pins headers (2.54RM)
 				(if you can't find them, i use 4 x 6 pin single row, skipping the GPIO pins 
 				in the middle (13,14), which aren’t used): 
 				eg http://www.taydaelectronics.com/stackable-header-6-pins-2-54mm.html
+1x	single row, male 2 pins (J1)
+1x	single row, male 3 pins (J2)
 	
 tact switches  	2x  (multimecs 5E/5G)* (mouser #: 642-5GTH935)
 + caps		2x  (multimecs “1SS09-15.0”) (mouser #: 642-1SS09-15.0, or 16.0)
