@@ -5,9 +5,7 @@
 - ICs/semis/etc (SMT):
 
 PCM5102A 1x  (mouser # 595-PCM5102APWR)
-
 MCP3208 (SOIC16) 1x  (mouser # 579-MCP3208CISL)
-
 TL072 (SOIC8) 4x (or 3x, if you’d like to use something better for the output stage, i’ve used an OPA1662)
 2N3904 NPN (MMBT3904) 3x 
 Schottky diodes/bat42 (minimelf) 15x 
