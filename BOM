@@ -6,9 +6,9 @@
 PCM5102A (TSSOP) 1x  (mouser # 595-PCM5102APWR)
 MCP3208 (SOIC16) 1x  (mouser # 579-MCP3208CISL)
 TL072 (SOIC8)    4x (or 3x, if you’d like to use something better for the output stage, i’ve used an OPA1662)
-2N3904 NPN (MMBT3904) 3x 
-Bat42 Schottky diodes (minimelf) 15x 
-SM5817 Schottky diodes 2x (or use 1206 ferrit bead, rated 1A (probably 0.5A will do, too))
+NPN transistors (MMBT3904) 3x 
+BAT42 Schottky diodes (minimelf) 15x 
+SM5817 Schottky diodes 2x (or use 1206 ferrit bead, rated 1A)
 ADP150 regulator (3v3, TSOT) 1x (mouser # 584-ADP150AUJZ-3.3R7)
 
 
@@ -39,12 +39,13 @@ through-hole parts:
 330n (ceramic, 5RM) 	 2x
 10uF (electrolytic)      3x      
 22uf (electrolytic)	 2x
-+3v3 regulator LD1117v33 1x (TO 220)* 
--5v regulator  79L05     1x    (TO 92)
-+5v regulator 7805 or RECOM 785.0 1.0	1x (T0 220; 78L05 is ok if used only with usb power)
++3v3 regulator LD1117*   1x (TO 220)
+-5v  regulator 79L05     1x (TO 92)
++5v  regulator 7805**    1x (T0 220; 78L05 is ok if used only with usb power)
 
-* (alternatively, you might want to use a MCP1525 2.5v regulator (pin compatible, T092, somewhat better specs); 
-   in that case, you'll need 6x 24k (ideally, 25k) input resistors from the potentiometers, not 33k)
+*  alternatively, you might want to use a MCP1525 2.5v regulator (pin compatible, T092, somewhat better specs); 
+   in that case, you'll need 6x 24k (well, ideally, 25k) input resistors from the potentiometers, not 33k.
+** more expensive/more efficient: use a RECOM 785.0 1.0.   
 
 ==============================
 
