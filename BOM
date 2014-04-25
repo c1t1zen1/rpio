@@ -10,7 +10,7 @@ TL072 (SOIC8)    4x (or 3x, if you’d like to use something better for the outp
 Schottky diodes/bat42 (minimelf) 15x 
 ADP150 regulator (3v3, TSOT) 1x (mouser # 584-ADP150AUJZ-3.3R7)
 
-- resistors 1206
+- resistors 1206:
 
 220R 5x 
 470R 2x 
@@ -42,23 +42,26 @@ through hole parts:
 
 - misc:
 
-jacks: 			11x  (kobiconn type (ie the ones with ground lug at the top, signal and switch facing down))
+jacks 		11x  kobiconn type (ie the ones with ground lug at the top, signal and switch facing down))
 
-pots:			6x   (9mm vertical; linear (i’ve used 50k but anything 10-100k will 				do))
+pots		6x   (9mm vertical; linear (i’ve used 50k but anything 10-100k will do))
 
-pins headers:        		1x 	male header 2x4  (for i2s / rpi P5)
-				1x	LONG female 2x4 headers (to match)
-				1x	LONG female headers to match rpi GPIO (2x13); 
+pins headers    
+
+1x 	male header 2x4  (for i2s / rpi P5)
+1x	LONG female 2x4 headers (to match)
+1x	LONG female headers to match rpi GPIO (2x13); 
 				(if you can't find them, i use 4 x 6 pin single row, skipping the GPIO pins 
-				in the middle (13,14), which aren’t used.): 
+				in the middle (13,14), which aren’t used): 
 				eg http://www.taydaelectronics.com/stackable-header-6-pins-2-54mm.html
 	
-tact switches  		2x  (multimecs 5E/5G)* (mouser #: 642-5GTH935)
-caps			2x  (multimecs “1SS09-15.0”) (mouser #: 642-1SS09-15.0)
+tact switches  	2x  (multimecs 5E/5G)* (mouser #: 642-5GTH935)
++ caps		2x  (multimecs “1SS09-15.0”) (mouser #: 642-1SS09-15.0, or 16.0)
 
 spacer/standoff (M3)	1x (20mm)
 little jumper thingies  2x (or use wire)
 
 /* all values are printed on the pcb except the two 1N5817 diodes, and resistors "fb" (2x) and "grrr" (2x) */
-/* the 1N5817 diodes go to pads right at the power header (no label); "fb" and "grrr" determine the gain of the (non-inverting) output stage */
+/* the 1N5817 diodes go to pads right at the power header (no label);        				   */
+/* "fb" and "grrr" determine the gain of the (non-inverting) output stage				   */
 
