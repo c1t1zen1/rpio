@@ -31,7 +31,7 @@ ADP150 regulator (3v3, TSOT) 1x (mouser # 584-ADP150AUJZ-3.3R7)
 
 through hole parts: 
 
-1N5817 Schottky diode    2x (or use 1206 bead)
+1N5817 Schottky diode    2x (or use 1206 ferrit bead, 1A, probably 0.5A will do, too)
 10uH inductance 	 1x
 330n (ceramic, 5RM) 	 2x
 10uF (electrolytic)      3x      
@@ -62,7 +62,7 @@ spacer/standoff (M3)	1x (20mm)
 little jumper thingies  2x (or use wire)
 
 /* all values are printed on the pcb except the two 1N5817 diodes, and resistors "fb" (2x) and "grrr" (2x) */
-/* the 1N5817 diodes go to pads right at the power header (no label);        				   */
+/* the 1N5817 diodes go to the pads right at the power header (no label); alternatively, use ferrit beads  */
 /* "fb" and "grrr" determine the gain of the (non-inverting) output stage. adjust to your liking	   */
 /* using 100k for "fb" and 49k9 for "grrr" will result in ~ 3x gain					   */
 
