@@ -187,10 +187,10 @@ int main(int argc, char *argv[]){
 		       		}
 			val = RESOLUTION - (val>>SMOOTH);
 			
-			if (val < 10)         { msgLength = 5; }
-			else if (val < 100)   { msgLength = 6; }
-			else if (val < 1000)  { msgLength = 7; }
-			else 		      { msgLength = 8; }
+			if (val > 999)        { msgLength = 8; }
+			else if (val > 99)    { msgLength = 7; }
+			else if (val > 9)     { msgLength = 6; }
+			else 		      { msgLength = 5; }
 			ADC_FUDI = (char *) malloc(msgLength); // + 4 == id, whitespace, semicolon, /0
 			snprintf(ADC_FUDI+2, msgLength, "%d", val);
 			ADC_FUDI[0] = (char)(((int)'0')+(5-i));
