@@ -191,11 +191,13 @@ int main(int argc, char *argv[]){
 			else if (val > 99)    { msgLength = 7; }
 			else if (val > 9)     { msgLength = 6; }
 			else 		      { msgLength = 5; }
-			ADC_FUDI = (char *) malloc(msgLength); // + 4 == id, whitespace, semicolon, /0
+			/* format FUDI msg: id, whitespace, val, semicolon, /0 */
+			ADC_FUDI = (char *) malloc(msgLength); 
 			snprintf(ADC_FUDI+2, msgLength, "%d", val);
 			ADC_FUDI[0] = (char)(((int)'0')+(5-i));
 			ADC_FUDI[1] = ' ';
-			strcat(ADC_FUDI, ";");
+			ADC_FUDI[msgLength-1] = ';';
+			//strcat(ADC_FUDI, ';');
 			send(sock, ADC_FUDI, strlen(ADC_FUDI), 0);
 			delay(ms_rate);
 						
