@@ -196,8 +196,8 @@ int main(int argc, char *argv[]){
 			snprintf(ADC_FUDI+2, msgLength, "%d", val);
 			ADC_FUDI[0] = (char)(((int)'0')+(5-i));
 			ADC_FUDI[1] = ' ';
-			ADC_FUDI[msgLength-1] = ';';
-			//strcat(ADC_FUDI, ';');
+			ADC_FUDI[msgLength-2] = ';';
+			//strcat(ADC_FUDI, ";");
 			send(sock, ADC_FUDI, strlen(ADC_FUDI), 0);
 			delay(ms_rate);
 						
